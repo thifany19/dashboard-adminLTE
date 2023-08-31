@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard 3</title>
+  <title>SCAED | Usuarios</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="css/all.css">
+
+  <link rel="stylesheet" href="iconos/css/all.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.css">
   <!-- SweetAlert2 -->
@@ -48,20 +49,38 @@
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
+          <i class="fa-solid fa-user"></i>
+          <span class="badge badge-warning navbar-badge"></span>
         </a>
+        <!--perfil-->
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <span class="dropdown-item dropdown-header">Perfil</span>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
+          <div class="text-center">
+              <img class="profile-user-img  img-circle"
+                   src="img/perfil.jpg"
+                   alt="User profile picture">
+            </div>
+            <h3 class="profile-username text-center">Mampotes</h3>
+
+            
+            <span class="float-right text-muted text-sm"></span>
           </a>
          
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          <a href="login.html" class="dropdown-item dropdown-footer">Iniciar sesion</a>
+          <div class="dropdown-divider"></div>
+          <a href="registro.html" class="dropdown-item dropdown-footer">Registrar</a>
+          <div class="dropdown-divider"></div>
+          <a href="forgot-password.html" class="dropdown-item dropdown-footer">Recuperar contraseña</a>
+          <div class="dropdown-divider"></div>
+          <a href="cambiar-contraseña.html" class="dropdown-item dropdown-footer">cambiar contraseña</a>
+          <div class="dropdown-divider"></div>
+          <a href="registro.html" class="dropdown-item dropdown-footer">cerrar sesion</a>
         </div>
+
+        <!--fin perfil-->
       </li>
       
     </ul>
@@ -94,14 +113,20 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="dashboard-inicio.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa-solid fa-house"></i>
                   <p>Inicio</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="dashboard-usuarios.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fa-solid fa-users-rectangle" ></i>
                   <p>Usuarios</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="dashboard-informes.html" class="nav-link">
+                  <i class="nav-icon fas fa-edit"></i>
+                  <p>Informes</p>
                 </a>
               </li>
              
@@ -169,8 +194,8 @@
                   </p>
                 </div>
                 <div class="modal-footer justify-content-between">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary" >Guardar Cambios</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal"  href="dashboard-usuarios.html">Cerrar</button>
+                  <a href="dashboard-usuarios.html" class="btn btn-primary " tabindex="-1" role="button" aria-disabled="true">Guardar</a>
                 </div>
               </div>
          
@@ -198,21 +223,96 @@
            </thead>
           <tbody>
           <tr>
-           <td>Trident</td>
-          <td>Internet Explorer 4.0
+           <td>juan</td>
+          <td>gutierrez
           </td>
-          <td>Win 95+</td>
-          <td> 4</td>
-          <td>X</td>
+          <td>juan@gmail.com</td>
+          <td> 3113444353</td>
+          <td> <div class="margin">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Acciones</button>
+              <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+            </div>
+          </td>
          </tr>
                 
          <tr>
-         <td>Presto</td>
-         <td>Opera 8.0</td>
-         <td>Win 95+ / OSX.2+</td>
-         <td>-</td>
-         <td>A</td>
+         <td>Preto</td>
+         <td>gonorr</td>
+         <td>rata@gmail.com</td>
+         <td>6666232454</td>
+         <td>
+          <div class="margin">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Acciones</button>
+              <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+            </div>
+         </td>
          </tr>
+
+         <tr>
+          <td>yatra</td>
+          <td>ganar</td>
+          <td>gana@gmail.com</td>
+          <td>3126232454</td>
+          <td>
+            <div class="margin">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">Acciones</button>
+                <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+              </div>
+          </td>
+          </tr>
+
+          <tr>
+            <td>simon</td>
+            <td>correa</td>
+            <td>corea@gmail.com</td>
+            <td>3212424554</td>
+            <td>
+              <div class="margin">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Acciones</button>
+                  <button type="button" class="btn btn-default dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu" role="menu">
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                </div>
+            </td>
+            </tr>
          </table>
         </div>
     </div>
